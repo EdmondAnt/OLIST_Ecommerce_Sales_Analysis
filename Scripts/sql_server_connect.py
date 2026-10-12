@@ -67,7 +67,10 @@ def load_sql_to_df(file_path : str, connection : str) -> DataFrame:
         raw_sql = path.read_text(encoding="utf-8")
 
     except FileNotFoundError as error:
-        raise f"File not found at {path.absolute()}"
+        raise FileNotFoundError(
+            f"  File not found at {path.absolute()}"
+            f"  Current Working Dir: {Path.cwd()}"
+        ) from error
     
     query = text(raw_sql)
     df = read_sql_query(query, con = connection)
