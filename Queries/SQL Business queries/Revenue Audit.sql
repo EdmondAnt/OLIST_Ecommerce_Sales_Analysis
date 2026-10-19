@@ -32,8 +32,8 @@ LEFT JOIN OrderPrices AS i
     ON o.order_id = i.order_id
 WHERE 
     o.order_status IN ('delivered') 
-    AND o.order_purchase_timestamp >= '2017-06-01' 
-    AND o.order_purchase_timestamp <  '2018-07-01'
+    AND o.order_purchase_timestamp >= '2017-08-01' 
+    AND o.order_purchase_timestamp <  '2018-08-01'
     AND ISNULL(p.total_order_payment, 0) - (ISNULL(i.total_order_price, 0) + ISNULL(i.total_order_freight, 0)) > 0.02
 ORDER BY 
     o.order_purchase_timestamp ASC;
@@ -67,6 +67,6 @@ LEFT JOIN OrderPrices AS i
     ON o.order_id = i.order_id
 WHERE 
     o.order_status IN ('delivered') 
-    AND o.order_purchase_timestamp >= '2017-06-01' 
-    AND o.order_purchase_timestamp <  '2018-07-01'
-    AND ISNULL(p.total_order_payment, 0) - (ISNULL(i.total_order_price, 0) + ISNULL(i.total_order_freight, 0)) > 0.02
+    AND o.order_purchase_timestamp >= '2017-08-01' 
+    AND o.order_purchase_timestamp <  '2018-08-01'
+    AND ABS(ISNULL(p.total_order_payment, 0) - (ISNULL(i.total_order_price, 0) + ISNULL(i.total_order_freight, 0))) > 0.02

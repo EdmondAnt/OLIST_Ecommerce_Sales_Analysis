@@ -22,7 +22,7 @@ ON pay.order_id = o.order_id
 JOIN olist.category_translation as t
 ON p.product_category_name = t.product_category_name
 WHERE 
-        o.order_status NOT IN ('cancelled', 'unavailable')
+        o.order_status IN ('delivered') 
 GROUP BY t.product_category_name_english)
 SELECT
 category_count, category_name, category_revenue
