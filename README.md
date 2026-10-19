@@ -1,4 +1,4 @@
-![Olist_logo](Assets\logo_olist.svg)
+![Olist_logo](Assets/logo_olist.svg)
 
 # Olist Health & Beauty Category Analysis
 Edmond Antonian, 2026.10
@@ -47,7 +47,7 @@ This report is written for the Category Management team and the Head of Operatio
 
 ## 3. Executive Summary
 
-![hb_monthly_revenue.png](Assets\hbrevenue.png)
+![hb_monthly_revenue.png](Assets/hbrevenue.png)
 
 
 ## 4. Database Structure and ERD
@@ -84,11 +84,11 @@ The two marketing tables (`marketing_qualified_leads` and `closed_deals`) descri
 
 ### 5.1 Category Overview
 
-![top10.png](Assets\top10.png)
+![top10.png](Assets/top10.png)
 - Health & Beauty vs other categories: revenue rank, order share, AOV comparison (bar chart).
 
 ### 5.2 Sales Trend
-![hb_aov_and_orders](Assets\hb_aov_and_orders.png)
+![hb_aov_and_orders](Assets/hb_aov_and_orders.png)
 - Monthly revenue, orders and AOV .
 - Seasonality, check brazilian marketing days, like Black Friday.
 - MoM growth vs AOV growth.
