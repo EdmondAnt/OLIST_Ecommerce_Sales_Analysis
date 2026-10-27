@@ -12,6 +12,7 @@ WITH items AS (
         c.customer_unique_id,
         i.seller_id,
         i.price,
+        p.product_id,
         -- REPLACE removes stray line-break characters; drop it once the translation table is cleaned
         REPLACE(t.product_category_name_english, CHAR(13), '') AS category_name
     FROM olist.orders AS o
@@ -34,7 +35,8 @@ metrics AS (
         COUNT(*)                                          AS units,
         SUM(price)                                        AS revenue,
         SUM(price) / NULLIF(COUNT(DISTINCT order_id), 0)  AS avg_order_value,
-        AVG(CAST(price AS float))                         AS avg_item_price
+        AVG(CAST(price AS float))                         AS avg_item_price,
+        COUNT(DISTINCT product_id)                        AS product_count
     FROM items
 
     UNION ALL
@@ -47,7 +49,8 @@ metrics AS (
         COUNT(*),
         SUM(price),
         SUM(price) / NULLIF(COUNT(DISTINCT order_id), 0),
-        AVG(CAST(price AS float))
+        AVG(CAST(price AS float)),
+        COUNT(DISTINCT product_id)
     FROM items
     WHERE category_name = @category
 )
@@ -56,6 +59,7 @@ SELECT
     customers,
     sellers,
     orders,
+    product_count,
     units,
     ROUND(revenue, 2)         AS revenue,
     ROUND(avg_order_value, 2) AS avg_order_value,

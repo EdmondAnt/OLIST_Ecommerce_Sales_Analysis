@@ -13,7 +13,7 @@ This analysis uses **Olist** order data from September 2016 to October 2018. For
 
 In this period, the dataset covers about 70k unique customers and more than 2.5k sellers, spread across almost all of Brazil. Revenue between August 2017 and July 2018 reached R$9.9 million (Brazilian reals) and grew steadily year on year.
 
-Health and Beauty was one of the biggest contributors to this growth. Its revenue rose by around  280%, from almost R$250k (Oct 2016 to Sep 2017) to R$935k (Oct 2017 to Sep 2018), alongside a sharp rise in the number of orders. Understand  ing what made the category successful, and how to repeat it, can help the whole business.
+Health and Beauty was one of the biggest contributors to this growth. Its revenue rose by around  280%, from almost R$250k (Oct 2016 to Sep 2017) to R$916k (Oct 2017 to Sep 2018), alongside a sharp rise in the number of orders. Understand  ing what made the category successful, and how to repeat it, can help the whole business.
 
 ### 1.2 Purpose and Audience
 This report is written for the Category Management team and the Head of Operations. It reviews the category's performance over the last complete year, covering:
@@ -46,9 +46,9 @@ This report is written for the Category Management team and the Head of Operatio
   - *Revenue by state:* where the category sells best
 
 ## 3. Executive Summary
+![top10.png](Assets\top10.png)
 
-![hb_monthly_revenue.png](Assets/hbrevenue.png)
-
+1.
 
 ## 4. Database Structure and ERD
 
@@ -83,15 +83,48 @@ The two marketing tables (`marketing_qualified_leads` and `closed_deals`) descri
 ## 5. Insights Deep-Dive
 
 ### 5.1 Category Overview
+Olist has total of 73 categories. 
+Health & Beauty(H&B) represents second-largest category, generating R$ 916k in revenue during a period under review, which is close to the leading category, Watches & Gifts.
+H&B's share in total marketplace revenue is almost 10%, making it an important growth driver for the business. The category is also one of the largest categories in terms of product assortment, seller participation and customer base. 
+H&B includes 1848 products, which is 7% of the total products sold on the marketplace. It is supported by 391 sellers representing 15.5% of active sellers, and 6402 customers, or 9.1% of all customers.
 
-![top10.png](Assets/top10.png)
-- Health & Beauty vs other categories: revenue rank, order share, AOV comparison (bar chart).
+Compared with other categories, Health & Beauty demonstrates one of the strongest revenue growth rates. Although it started from a solid base, being already ranked second in a FY16-17, the category acheived 280% growth and remained in second place.
+This suggests that the category is not only large, but also expanding at a pace that is strategically significant for future growth.
 
 ### 5.2 Sales Trend
-![hb_aov_and_orders](Assets/hb_aov_and_orders.png)
-- Monthly revenue, orders and AOV .
-- Seasonality, check brazilian marketing days, like Black Friday.
-- MoM growth vs AOV growth.
+![hb_monthly_revenue.png](Assets\hb_monthly_revenue.png)
+
+1. #### Monthly Revenue
+* H&B showd a steady declining trend before November 2017, followed by a sharp rise in November. This increase is likely associated with the promotional period surrounding Black Friday and other end-of-year marketing activity. 
+* After sharp rise in November 2017, revenue corrected in December, after which the category entered a period of sustained growth.
+* From December 2017 onward, the category increased by 70%, rising from R$60,688.75 to R$103,524.22. This suggests that the later part of the period was driven by a new level of demand rather than a one-off seasonal spike. 
+* In order to understand where this growth originated, it is improtant to examine AOV, Number of orders and impact of marketing events during the given period.
+
+2. #### Order Count, AOV
+![hb_aov_and_orders](Assets\hb_aov_and_orders.png)
+
+* Average order value fluctuated between R$130 and R$150, with an average of approximately R$141. The largest variations occurred between October 2017 and January 2018, which coincides with the peak period of promotional campaigns and holiday activity.
+* After January 2018 AOV remained relatively stable around the average level, suggesting a period of stabilisation. It indicates that the category did not rely on price inflation to generate revenue growth.
+* A similar pattern is visible in the order volume trend. Between October 2017 and January 2018, order counts recovered sharply and, unlike AOV, continued to rise steadily thereafter.
+* This indicates that growth was driven primarily by higher transaction volume. By the end of the period, monthly order volume rises from a 338 orders to 699, with a pick at 790 orders.
+
+
+3. #### Seasonality 
+![marketing_events](Assets\event_uplift_vs_platform.png)
+
+* Chart above illustrates how major popular holidays and marketing campaigns, such as Black Friday, influence sales. 
+* A 14-day period before an event was selected as the campaign window. 
+* A 28-day period before that window was used as the baseline for comparison.
+* All events, except Children's day and Christmas resulted in a revenue uplift for the Health & Beauty, than for Olist overall.
+* For Children's day, other categories delivered 4% revenue uplift, while H&B declined by 35%. This may be associated with a fact that children’s products are not a core target segment for the category.
+* For the Christmas, the marketplace experienced a decline of -43%. This decline may be associated with a previous Black Friday campaign and and seasonal demand patterns.
+* The most significant campaign was Black Friday, which delivered a 118% uplift in revenue for Health & Beauty. This aligns with the earlier charts, which showed a sharp increase in both order volume and AOV during the same period.
+
+
+
+
+
+
 
 ### 5.3 Product Performance
 

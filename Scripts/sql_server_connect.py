@@ -80,7 +80,7 @@ def load_sql_to_df( file_path: str | Path,
         ) from error
  
     with sql_engine.connect() as conn:
-        return read_sql_query(text(raw_sql), con=conn, params=params)
+        return read_sql_query(text(raw_sql), con=conn)
 
 
 if __name__ == "__main__":
