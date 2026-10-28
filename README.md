@@ -46,7 +46,7 @@ This report is written for the Category Management team and the Head of Operatio
   - *Revenue by state:* where the category sells best
 
 ## 3. Executive Summary
-![top10.png](Assets\top10.png)
+![top10.png](Assets/top10.png)
 
 1.
 
@@ -75,10 +75,10 @@ The two marketing tables (`marketing_qualified_leads` and `closed_deals`) descri
 **Data preparation notes**
 
 - Only delivered orders are included.
-- Category names were translated into English using the translation table. Stray line-break characters were removed and underscores replaced with spaces.
+- Category names were translated into English using the translation table.
 - Revenue is the item price. Freight is analysed separately.
-- Payments were compared with item price plus freight to check that revenue figures are reliable. [State result here.]
-- Products with no category are excluded.
+- Payments were compared with item price plus freight to check that revenue figures are reliable. Small discrepancy of around R$ 2k were found, which can be ignored.
+- Products with no category are aggregated as "misc.".
 
 ## 5. Insights Deep-Dive
 
@@ -92,7 +92,7 @@ Compared with other categories, Health & Beauty demonstrates one of the stronges
 This suggests that the category is not only large, but also expanding at a pace that is strategically significant for future growth.
 
 ### 5.2 Sales Trend
-![hb_monthly_revenue.png](Assets\hb_monthly_revenue.png)
+![hb_monthly_revenue.png](Assets/hb_monthly_revenue.png)
 
 1. #### Monthly Revenue
 * H&B showd a steady declining trend before November 2017, followed by a sharp rise in November. This increase is likely associated with the promotional period surrounding Black Friday and other end-of-year marketing activity. 
@@ -101,7 +101,7 @@ This suggests that the category is not only large, but also expanding at a pace 
 * In order to understand where this growth originated, it is improtant to examine AOV, Number of orders and impact of marketing events during the given period.
 
 2. #### Order Count, AOV
-![hb_aov_and_orders](Assets\hb_aov_and_orders.png)
+![hb_aov_and_orders](Assets/b_aov_and_orders.png)
 
 * Average order value fluctuated between R$130 and R$150, with an average of approximately R$141. The largest variations occurred between October 2017 and January 2018, which coincides with the peak period of promotional campaigns and holiday activity.
 * After January 2018 AOV remained relatively stable around the average level, suggesting a period of stabilisation. It indicates that the category did not rely on price inflation to generate revenue growth.
@@ -110,7 +110,7 @@ This suggests that the category is not only large, but also expanding at a pace 
 
 
 3. #### Seasonality 
-![marketing_events](Assets\event_uplift_vs_platform.png)
+![marketing_events](Assets/event_uplift_vs_platform.png)
 
 * Chart above illustrates how major popular holidays and marketing campaigns, such as Black Friday, influence sales. 
 * A 14-day period before an event was selected as the campaign window. 
@@ -119,11 +119,6 @@ This suggests that the category is not only large, but also expanding at a pace 
 * For Children's day, other categories delivered 4% revenue uplift, while H&B declined by 35%. This may be associated with a fact that children’s products are not a core target segment for the category.
 * For the Christmas, the marketplace experienced a decline of -43%. This decline may be associated with a previous Black Friday campaign and and seasonal demand patterns.
 * The most significant campaign was Black Friday, which delivered a 118% uplift in revenue for Health & Beauty. This aligns with the earlier charts, which showed a sharp increase in both order volume and AOV during the same period.
-
-
-
-
-
 
 
 ### 5.3 Product Performance
