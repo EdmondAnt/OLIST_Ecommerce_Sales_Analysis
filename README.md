@@ -101,7 +101,7 @@ This suggests that the category is not only large, but also expanding at a pace 
 * In order to understand where this growth originated, it is improtant to examine AOV, Number of orders and impact of marketing events during the given period.
 
 2. #### Order Count, AOV
-![hb_aov_and_orders](Assets/b_aov_and_orders.png)
+![hb_aov_and_orders](Assets/hb_aov_and_orders.png)
 
 * Average order value fluctuated between R$130 and R$150, with an average of approximately R$141. The largest variations occurred between October 2017 and January 2018, which coincides with the peak period of promotional campaigns and holiday activity.
 * After January 2018 AOV remained relatively stable around the average level, suggesting a period of stabilisation. It indicates that the category did not rely on price inflation to generate revenue growth.

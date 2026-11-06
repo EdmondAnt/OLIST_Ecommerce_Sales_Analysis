@@ -13,8 +13,7 @@ WITH items AS (
         i.seller_id,
         i.price,
         p.product_id,
-        -- REPLACE removes stray line-break characters; drop it once the translation table is cleaned
-        REPLACE(t.product_category_name_english, CHAR(13), '') AS category_name
+        t.product_category_name_english AS category_name
     FROM olist.orders AS o
     JOIN olist.customers   AS c ON c.customer_id = o.customer_id
     JOIN olist.order_items AS i ON i.order_id    = o.order_id

@@ -28,9 +28,9 @@ def clean_category_names(df, column, replace_label):
     return df
 
 
-def save_chart(fig, path):
+def save_chart(fig, path, *args, **kwargs):
     """Save a figure into the Assets folder."""
-    fig.savefig(path)
+    fig.savefig(path, *args, **kwargs)
     print(f"Saved: {path}")
 
 
